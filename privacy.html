@@ -1,169 +1,486 @@
-AnaLog
-Plan. Pack. Pedal.
-
-Last Updated: February 4, 2026
-
-Privacy at a Glance
-We collect: Account info, location data, trips, rides, photos, and device info
-We use it for: Providing the service, maps, community features
-We share with: Mapbox (maps), Supabase (database), only as needed
-We don't: Sell your personal data to third parties
-You can: Access, export, or delete your data anytime
-This Privacy Policy describes how AnaLog Your Ride ("AnaLog," "we," "us," or "our") collects, uses, and shares information when you use our mobile application and related services (the "Service").
-
-By using AnaLog, you agree to the collection and use of information in accordance with this policy.
-
-1. Information We Collect
-1.1 Information You Provide
-Account Information:
-
-Email address
-Username and display name
-Profile photo (optional)
-Password (encrypted)
-Trip and Route Data:
-
-Routes you create, including waypoints and pins
-Trip details (name, dates, notes)
-Gear lists
-Photos you upload to trips
-Ride Tracking Data:
-
-GPS coordinates during tracked rides
-Ride duration, distance, and elevation
-Photos and journal entries
-Community Content:
-
-Trail reports and condition updates
-Trail Angel profiles
-Gear Swap listings
-Comments and messages
-1.2 Information Collected Automatically
-Location Data:
-
-GPS location when using maps or tracking rides
-Location is only collected when the app is in use and you've granted permission
-You can disable location access in your device settings
-Device Information:
-
-Device type and operating system
-App version
-Crash logs and performance data
-2. How We Use Your Information
-We use your information to:
-
-Provide the Service: Display maps, save your trips, track rides, and enable community features
-Improve the Service: Analyze usage patterns, fix bugs, and develop new features
-Communicate: Send service updates, respond to support requests
-Ensure Safety: Detect and prevent fraud, abuse, or violations of our Terms
-Personalize: Remember your preferences and settings
-We do not:
-Sell your personal information to third parties
-Use your data for targeted advertising
-Share your precise location with other users without your consent
-3. How We Share Your Information
-3.1 Public Content
-Some information you choose to share is visible to other users:
-
-Public profile (username, profile photo)
-Trail reports you submit
-Trail Angel profiles
-Gear Swap listings
-Trips marked as "Open Invitation"
-3.2 Service Providers
-We share data with trusted service providers who help us operate the Service:
-
-Provider	Purpose	Data Shared
-Mapbox	Maps and navigation	Location data, map interactions
-Supabase	Database and authentication	Account data, trips, content
-Open-Meteo	Elevation data	Route coordinates
-3.3 Legal Requirements
-We may disclose information if required by law, court order, or government request, or to protect the rights, safety, or property of AnaLog, our users, or the public.
-
-3.4 Business Transfers
-If AnaLog is involved in a merger, acquisition, or sale of assets, your information may be transferred as part of that transaction.
-
-4. Third-Party Services
-The Service integrates with third-party services that have their own privacy policies:
-
-Mapbox: Privacy Policy
-
-Supabase: Privacy Policy
-
-Google (if using Google Sign-In): Privacy Policy
-
-Apple (if using Apple Sign-In): Privacy Policy
-
-5. Data Storage and Security
-5.1 Where We Store Data
-Your data is stored on secure servers provided by Supabase, which uses Amazon Web Services (AWS) infrastructure. Data may be stored in the United States.
-
-5.2 Security Measures
-We implement reasonable security measures including:
-
-Encryption of data in transit (HTTPS/TLS)
-Encryption of sensitive data at rest
-Secure authentication practices
-Access controls and monitoring
-5.3 Your Responsibilities
-You are responsible for keeping your account credentials secure and notifying us of any unauthorized access.
-
-Note: No method of transmission or storage is 100% secure. We cannot guarantee absolute security of your data.
-6. Data Retention
-Account data: Retained until you delete your account
-Trips and rides: Retained until you delete them or your account
-Community content: May be retained after account deletion if publicly posted
-Logs and analytics: Retained for up to 12 months
-7. Your Rights and Choices
-7.1 Access and Export
-You can access your data within the app. Contact us to request a full export of your data.
-
-7.2 Correction
-You can update your profile and trip information within the app.
-
-7.3 Deletion
-You can delete individual trips and rides within the app. To delete your entire account and associated data, contact us at the email below.
-
-7.4 Location Permissions
-You can disable location access in your device settings. Note that some features (maps, ride tracking) require location access to function.
-
-7.5 Marketing Communications
-You can opt out of promotional emails by clicking "unsubscribe" or adjusting your notification settings.
-
-8. Children's Privacy
-AnaLog is not intended for children under 13 years of age. We do not knowingly collect personal information from children under 13. If you believe we have collected information from a child under 13, please contact us immediately.
-
-Users between 13 and 17 may use the Service with parental or guardian consent.
-
-9. California Privacy Rights (CCPA)
-If you are a California resident, you have the right to:
-
-Know: What personal information we collect and how it's used
-Delete: Request deletion of your personal information
-Opt-out: Opt out of the "sale" of personal information (we do not sell your data)
-Non-discrimination: Not be discriminated against for exercising your rights
-To exercise these rights, contact us at the email below.
-
-10. International Users
-If you are located outside the United States, your information may be transferred to and processed in the United States, where data protection laws may differ from your country.
-
-By using the Service, you consent to the transfer of your information to the United States.
-
-11. Changes to This Policy
-We may update this Privacy Policy from time to time. We will notify you of material changes by posting the updated policy in the app or by email.
-
-Your continued use of the Service after changes constitutes acceptance of the updated policy.
-
-12. Contact Us
-If you have questions about this Privacy Policy or our data practices, please contact us at:
-
-Email: support@analogyourride.com
-
-Data Collection Summary
-Data Type	Collected	Shared	Purpose
-Email	Yes	Auth providers	Account creation, communication
-Location	When permitted	Mapbox	Maps, ride tracking
-Trips/Routes	Yes	No	Core functionality
-Photos	When uploaded	No	Trip documentation
-Device Info	Yes	No	Troubleshooting, analytics
-© 2026 AnaLog Your Ride. All rights reserved.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AnaLog Your Ride - Privacy Policy</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Georgia', 'Times New Roman', serif;
+      background-color: #FAF8F5;
+      color: #2C3E2D;
+      line-height: 1.7;
+      padding: 0;
+    }
+    
+    .header {
+      background-color: #2C3E2D;
+      color: #FAF8F5;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    
+    .header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 8px;
+      letter-spacing: 2px;
+    }
+    
+    .header .tagline {
+      font-size: 1rem;
+      opacity: 0.8;
+      font-style: italic;
+    }
+    
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 24px;
+    }
+    
+    .last-updated {
+      text-align: center;
+      color: #6B7B6E;
+      font-size: 0.9rem;
+      margin-bottom: 32px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid #D4CFC7;
+    }
+    
+    .summary-box {
+      background-color: #E8F5E9;
+      border: 1px solid #A5D6A7;
+      padding: 20px 24px;
+      border-radius: 8px;
+      margin-bottom: 32px;
+    }
+    
+    .summary-box h3 {
+      color: #2C3E2D;
+      margin-bottom: 12px;
+    }
+    
+    .summary-box ul {
+      margin-left: 20px;
+    }
+    
+    .summary-box li {
+      margin-bottom: 6px;
+    }
+    
+    h2 {
+      color: #2C3E2D;
+      font-size: 1.5rem;
+      margin-top: 40px;
+      margin-bottom: 16px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid #C17F59;
+    }
+    
+    h3 {
+      color: #3D5A3F;
+      font-size: 1.15rem;
+      margin-top: 24px;
+      margin-bottom: 12px;
+    }
+    
+    p {
+      margin-bottom: 16px;
+    }
+    
+    ul, ol {
+      margin-left: 24px;
+      margin-bottom: 16px;
+    }
+    
+    li {
+      margin-bottom: 8px;
+    }
+    
+    .section {
+      margin-bottom: 32px;
+    }
+    
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      font-size: 0.95rem;
+    }
+    
+    th, td {
+      border: 1px solid #D4CFC7;
+      padding: 12px;
+      text-align: left;
+    }
+    
+    th {
+      background-color: #2C3E2D;
+      color: #FAF8F5;
+    }
+    
+    tr:nth-child(even) {
+      background-color: #F5F2ED;
+    }
+    
+    a {
+      color: #C17F59;
+      text-decoration: none;
+    }
+    
+    a:hover {
+      text-decoration: underline;
+    }
+    
+    .info-box {
+      background-color: #FFF3E0;
+      border-left: 4px solid #C17F59;
+      padding: 16px 20px;
+      margin: 24px 0;
+      border-radius: 0 8px 8px 0;
+    }
+    
+    .footer {
+      background-color: #2C3E2D;
+      color: #FAF8F5;
+      text-align: center;
+      padding: 24px;
+      margin-top: 60px;
+    }
+    
+    .footer p {
+      margin: 0;
+      font-size: 0.9rem;
+      opacity: 0.8;
+    }
+    
+    @media (max-width: 600px) {
+      .header h1 {
+        font-size: 1.8rem;
+      }
+      
+      .container {
+        padding: 24px 16px;
+      }
+      
+      h2 {
+        font-size: 1.3rem;
+      }
+      
+      table {
+        font-size: 0.85rem;
+      }
+      
+      th, td {
+        padding: 8px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>AnaLog Your Ride</h1>
+    <p class="tagline">Plan. Pack. Pedal.</p>
+  </div>
+  
+  <div class="container">
+    <h2 style="margin-top: 0; border-bottom: none; text-align: center;">Privacy Policy</h2>
+    <p class="last-updated">Last Updated: February 9, 2026</p>
+    
+    <div class="summary-box">
+      <h3>Privacy at a Glance</h3>
+      <ul>
+        <li><strong>We collect:</strong> Account info, location data, trips, rides, photos, and device info</li>
+        <li><strong>We use it for:</strong> Providing the service, maps, community features</li>
+        <li><strong>We share with:</strong> Mapbox (maps), Supabase (database), only as needed</li>
+        <li><strong>We don't:</strong> Sell your personal data to third parties</li>
+        <li><strong>You can:</strong> Access, export, or delete your data anytime</li>
+      </ul>
+    </div>
+    
+    <div class="section">
+      <p>This Privacy Policy describes how AnaLog Your Ride ("AnaLog," "we," "us," or "our") collects, uses, and shares information when you use our mobile application and related services (the "Service").</p>
+      <p>By using AnaLog Your Ride, you agree to the collection and use of information in accordance with this policy.</p>
+    </div>
+    
+    <h2>1. Information We Collect</h2>
+    
+    <div class="section">
+      <h3>1.1 Information You Provide</h3>
+      
+      <p><strong>Account Information:</strong></p>
+      <ul>
+        <li>Email address</li>
+        <li>Username and display name</li>
+        <li>Profile photo (optional)</li>
+        <li>Password (encrypted)</li>
+      </ul>
+      
+      <p><strong>Trip and Route Data:</strong></p>
+      <ul>
+        <li>Routes you create, including waypoints and pins</li>
+        <li>Trip details (name, dates, notes)</li>
+        <li>Gear lists</li>
+        <li>Photos you upload to trips</li>
+      </ul>
+      
+      <p><strong>Ride Tracking Data:</strong></p>
+      <ul>
+        <li>GPS coordinates during tracked rides</li>
+        <li>Ride duration, distance, and elevation</li>
+        <li>Photos and journal entries</li>
+      </ul>
+      
+      <p><strong>Community Content:</strong></p>
+      <ul>
+        <li>Trail reports and condition updates</li>
+        <li>Trail Angel profiles</li>
+        <li>Gear Swap listings</li>
+        <li>Comments and messages</li>
+      </ul>
+      
+      <h3>1.2 Information Collected Automatically</h3>
+      
+      <p><strong>Location Data:</strong></p>
+      <ul>
+        <li>GPS location when using maps or tracking rides</li>
+        <li>Location is only collected when the app is in use and you've granted permission</li>
+        <li>You can disable location access in your device settings</li>
+      </ul>
+      
+      <p><strong>Device Information:</strong></p>
+      <ul>
+        <li>Device type and operating system</li>
+        <li>App version</li>
+        <li>Crash logs and performance data</li>
+      </ul>
+    </div>
+    
+    <h2>2. How We Use Your Information</h2>
+    
+    <div class="section">
+      <p>We use your information to:</p>
+      <ul>
+        <li><strong>Provide the Service:</strong> Display maps, save your trips, track rides, and enable community features</li>
+        <li><strong>Improve the Service:</strong> Analyze usage patterns, fix bugs, and develop new features</li>
+        <li><strong>Communicate:</strong> Send service updates, respond to support requests</li>
+        <li><strong>Ensure Safety:</strong> Detect and prevent fraud, abuse, or violations of our Terms</li>
+        <li><strong>Personalize:</strong> Remember your preferences and settings</li>
+      </ul>
+      
+      <div class="info-box">
+        <strong>We do not:</strong>
+        <ul>
+          <li>Sell your personal information to third parties</li>
+          <li>Use your data for targeted advertising</li>
+          <li>Share your precise location with other users without your consent</li>
+        </ul>
+      </div>
+    </div>
+    
+    <h2>3. How We Share Your Information</h2>
+    
+    <div class="section">
+      <h3>3.1 Public Content</h3>
+      <p>Some information you choose to share is visible to other users:</p>
+      <ul>
+        <li>Public profile (username, profile photo)</li>
+        <li>Trail reports you submit</li>
+        <li>Trail Angel profiles</li>
+        <li>Gear Swap listings</li>
+        <li>Trips marked as "Open Invitation"</li>
+      </ul>
+      
+      <h3>3.2 Service Providers</h3>
+      <p>We share data with trusted service providers who help us operate the Service:</p>
+      
+      <table>
+        <tr>
+          <th>Provider</th>
+          <th>Purpose</th>
+          <th>Data Shared</th>
+        </tr>
+        <tr>
+          <td>Mapbox</td>
+          <td>Maps and navigation</td>
+          <td>Location data, map interactions</td>
+        </tr>
+        <tr>
+          <td>Supabase</td>
+          <td>Database and authentication</td>
+          <td>Account data, trips, content</td>
+        </tr>
+        <tr>
+          <td>Open-Meteo</td>
+          <td>Elevation data</td>
+          <td>Route coordinates</td>
+        </tr>
+      </table>
+      
+      <h3>3.3 Legal Requirements</h3>
+      <p>We may disclose information if required by law, court order, or government request, or to protect the rights, safety, or property of AnaLog Your Ride, our users, or the public.</p>
+      
+      <h3>3.4 Business Transfers</h3>
+      <p>If AnaLog Your Ride is involved in a merger, acquisition, or sale of assets, your information may be transferred as part of that transaction.</p>
+    </div>
+    
+    <h2>4. Third-Party Services</h2>
+    
+    <div class="section">
+      <p>The Service integrates with third-party services that have their own privacy policies:</p>
+      
+      <p><strong>Mapbox:</strong> <a href="https://www.mapbox.com/legal/privacy" target="_blank">Privacy Policy</a></p>
+      <p><strong>Supabase:</strong> <a href="https://supabase.com/privacy" target="_blank">Privacy Policy</a></p>
+      <p><strong>Google (if using Google Sign-In):</strong> <a href="https://policies.google.com/privacy" target="_blank">Privacy Policy</a></p>
+      <p><strong>Apple (if using Apple Sign-In):</strong> <a href="https://www.apple.com/legal/privacy/" target="_blank">Privacy Policy</a></p>
+    </div>
+    
+    <h2>5. Data Storage and Security</h2>
+    
+    <div class="section">
+      <h3>5.1 Where We Store Data</h3>
+      <p>Your data is stored on secure servers provided by Supabase, which uses Amazon Web Services (AWS) infrastructure. Data may be stored in the United States.</p>
+      
+      <h3>5.2 Security Measures</h3>
+      <p>We implement reasonable security measures including:</p>
+      <ul>
+        <li>Encryption of data in transit (HTTPS/TLS)</li>
+        <li>Encryption of sensitive data at rest</li>
+        <li>Secure authentication practices</li>
+        <li>Access controls and monitoring</li>
+      </ul>
+      
+      <h3>5.3 Your Responsibilities</h3>
+      <p>You are responsible for keeping your account credentials secure and notifying us of any unauthorized access.</p>
+      
+      <div class="info-box">
+        <strong>Note:</strong> No method of transmission or storage is 100% secure. We cannot guarantee absolute security of your data.
+      </div>
+    </div>
+    
+    <h2>6. Data Retention</h2>
+    
+    <div class="section">
+      <ul>
+        <li><strong>Account data:</strong> Retained until you delete your account</li>
+        <li><strong>Trips and rides:</strong> Retained until you delete them or your account</li>
+        <li><strong>Community content:</strong> May be retained after account deletion if publicly posted</li>
+        <li><strong>Logs and analytics:</strong> Retained for up to 12 months</li>
+      </ul>
+    </div>
+    
+    <h2>7. Your Rights and Choices</h2>
+    
+    <div class="section">
+      <h3>7.1 Access and Export</h3>
+      <p>You can access your data within the app. Contact us to request a full export of your data.</p>
+      
+      <h3>7.2 Correction</h3>
+      <p>You can update your profile and trip information within the app.</p>
+      
+      <h3>7.3 Deletion</h3>
+      <p>You can delete individual trips and rides within the app. To delete your entire account and associated data, contact us at the email below.</p>
+      
+      <h3>7.4 Location Permissions</h3>
+      <p>You can disable location access in your device settings. Note that some features (maps, ride tracking) require location access to function.</p>
+      
+      <h3>7.5 Marketing Communications</h3>
+      <p>You can opt out of promotional emails by clicking "unsubscribe" or adjusting your notification settings.</p>
+    </div>
+    
+    <h2>8. Children's Privacy</h2>
+    
+    <div class="section">
+      <p>AnaLog Your Ride is not intended for children under 13 years of age. We do not knowingly collect personal information from children under 13. If you believe we have collected information from a child under 13, please contact us immediately.</p>
+      <p>Users between 13 and 17 may use the Service with parental or guardian consent.</p>
+    </div>
+    
+    <h2>9. California Privacy Rights (CCPA)</h2>
+    
+    <div class="section">
+      <p>If you are a California resident, you have the right to:</p>
+      <ul>
+        <li><strong>Know:</strong> What personal information we collect and how it's used</li>
+        <li><strong>Delete:</strong> Request deletion of your personal information</li>
+        <li><strong>Opt-out:</strong> Opt out of the "sale" of personal information (we do not sell your data)</li>
+        <li><strong>Non-discrimination:</strong> Not be discriminated against for exercising your rights</li>
+      </ul>
+      <p>To exercise these rights, contact us at the email below.</p>
+    </div>
+    
+    <h2>10. International Users</h2>
+    
+    <div class="section">
+      <p>If you are located outside the United States, your information may be transferred to and processed in the United States, where data protection laws may differ from your country.</p>
+      <p>By using the Service, you consent to the transfer of your information to the United States.</p>
+    </div>
+    
+    <h2>11. Changes to This Policy</h2>
+    
+    <div class="section">
+      <p>We may update this Privacy Policy from time to time. We will notify you of material changes by posting the updated policy in the app or by email.</p>
+      <p>Your continued use of the Service after changes constitutes acceptance of the updated policy.</p>
+    </div>
+    
+    <h2>12. Contact Us</h2>
+    
+    <div class="section">
+      <p>If you have questions about this Privacy Policy or our data practices, please contact us at:</p>
+      <p><strong>Email:</strong> support@analogyourride.com</p>
+    </div>
+    
+    <h2>Data Collection Summary</h2>
+    
+    <div class="section">
+      <table>
+        <tr>
+          <th>Data Type</th>
+          <th>Collected</th>
+          <th>Shared</th>
+          <th>Purpose</th>
+        </tr>
+        <tr>
+          <td>Email</td>
+          <td>Yes</td>
+          <td>Auth providers</td>
+          <td>Account creation, communication</td>
+        </tr>
+        <tr>
+          <td>Location</td>
+          <td>When permitted</td>
+          <td>Mapbox</td>
+          <td>Maps, ride tracking</td>
+        </tr>
+        <tr>
+          <td>Trips/Routes</td>
+          <td>Yes</td>
+          <td>No</td>
+          <td>Core functionality</td>
+        </tr>
+        <tr>
+          <td>Photos</td>
+          <td>When uploaded</td>
+          <td>No</td>
+          <td>Trip documentation</td>
+        </tr>
+        <tr>
+          <td>Device Info</td>
+          <td>Yes</td>
+          <td>No</td>
+          <td>Troubleshooting, analytics</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  
+  <div class="footer">
+    <p>© 2026 AnaLog Your Ride. All rights reserved.</p>
+  </div>
+</body>
+</html>
